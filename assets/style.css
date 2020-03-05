@@ -1,0 +1,234 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+body,* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; } 
+
+.mg_pd_Sp,.col-md-6:before { display: block; clear: both; content: ''; }
+
+.col-md-6 { width: 50%; }
+.mg_pd .Selection_Part { width: 50%; float: left; }
+
+
+.mg_pd_Sp .col-md-6 { float: left; background: #8b0033; padding: 10px 10px; text-align: center; }
+.mg_pd_Sp .col-md-6 span.Name { color: #fff; }
+.mg_pd_Sp .col-md-6:nth-child(1) { border-right: 2px solid #fff; }
+/*.Image_F:nth-child(1) { border-right: 2px solid #000; }*/
+
+.Content_Title {
+    margin-left: 30px;
+}
+
+.Menubar {
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+}
+
+.Image_F img {
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+}
+.Image_F {
+    width: 50%;
+    float: left;
+}
+
+button.tablinks {
+    background: none;
+    border: none;
+}
+
+.Flavour_Inset.active {
+    display: none;
+}
+
+#Design { display: none; }
+
+div#Design.active {
+    display: block;
+}
+
+.Image_Data > img {
+    width: 100%;
+}
+
+.Import_Design {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.col-md-6.Display {
+    display: inline-block;
+}
+
+.Display_Data {
+    display: block;
+    text-align: center;
+    padding-top: 5%;
+}
+
+img#img {
+    max-width: 425px;
+}
+
+.Image_Wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+textarea#mobile-text-box {
+    font-size: 28.4433px;
+    text-align: center;
+    height: 55px;
+    font-family: sans-serif;
+    width: 325px;
+    resize: none;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+button{ cursor: pointer; }
+
+div#featured_img.active img {
+    background: #4b332c;
+}
+
+div#featured_img.active-2 img {
+    background: #008800;
+}
+
+.tooltip-instructions {
+    left: 64%;
+    bottom: 123px;
+    transform: translate(-50%, 0);
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 9;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* display: none; */
+    text-align: center;
+    position: absolute;
+}
+
+.tooltip-instructions p {
+  margin: 0px;
+  font-family: "CeraRoundPro-Bold";
+  padding-top: 2px;
+  min-width: 180px;
+}
+
+.tooltip-instructions:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  content: '';
+  top: 0px;
+}
+
+.stick_mini, .stick_tweenminikiddos, .stick_twin_pack, .stick_triplet_pack, .stick_customdaycare, .stick_senior {
+    width: 325px;
+    height: 325px;
+    margin: 25px auto 26px;
+    border-radius: 10px;
+}
+
+.stick_part {
+    float: left;
+    width: 129px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#demoDiv1 {
+	height: 100px !important;
+	width: 100px;
+	border: 1px solid #000;	
+}
+
+#demodiv-1 {
+	height: 50px;	
+}
+
+.mobile-text-box{
+    display: none;
+}
+.Text_1{
+    position: relative;
+    top: -264px;
+    display: none;
+}
+.Text_2{
+    position: relative;
+    top: -50px;
+    display: none;
+}
+
+.Text_3{
+    display: none;
+    position: relative;
+    top: -317px;
+}
+.Text_4{
+    display: none;
+    position: relative;
+    top: -50px;
+}
+.Text_5{
+    display: none;
+    position: relative;
+    top: -65px;
+}
+
+.Text_6{
+    display: none;
+    height: 86px !important;
+    width: 310px !important;
+    position: relative ;
+    top: -100px ;
+}
+.submit_btn{
+    float: right;
+    border: none;
+    width: 256px;
+    height: 40px;
+    color: white;
+    background: #8b0033;
+    box-shadow: 1px 2px 2px 0px;
+    cursor: pointer;
+}
+.tooltip_display{
+    display: none;
+}
+
+.submit_block{
+    padding-top: 15px;
+}
+

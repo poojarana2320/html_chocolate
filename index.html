@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candy Crush</title>
+    <script src="assets/main.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/Section.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="Header">
+       <div class="Header_Content">
+           <div class="Menubar">
+               <div class="Pull_Left">
+                   <div class="Content_Title">
+                       <h1>Your Brand Name</h1>
+                   </div>
+               </div>
+               <div class="Pull_Right">
+                   <div class="Content_Icon">
+                       <div class="Search_Item">
+                           
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="Main_Content">
+               <div class="mg_pd">
+                   <div class="col-md-6 Selection_Part">
+                       <div class="mg_pd_Sp">
+                           <div class="tab">
+                               <div class="col-md-6">
+                                   <button class="tablinks design_01"><span class="Name">Flavour</span></button>
+                                </div>
+                               <div class="col-md-6">
+                                   <button class="tablinks design_02"><span class="Name">Design</span></button>
+                               </div>
+                            </div>   
+                       </div>
+                       
+                       
+                       <div class="Flavour_Details tabcontent" id="Flavour">
+                           <div class="Flavour_Inset">
+                               <div class="Image_F"><img src="./assets/Images/dark.jpg" class="Dark Flavour_img" alt=""></div>
+                               <div class="Image_F"><img src="./assets/Images/white.jpg" class="White Flavour_img" alt=""></div>
+                           </div>
+                       </div>
+                       <div class="Design_Details tabcontent" id="Design">
+                               <div class="Import_Design">
+                                   <div class="Image_Data" id="thumb_img">
+                                       <img src="./assets/Images/puppy.png" class="Same first_img" alt="" 
+                                       onclick="changeimg('PugFamily-size-84.86-03.svg',this);" class="active">
+                                       <img src="./assets/Images/happybirthday1.png" class="Same second_img" alt="" 
+                                       onclick="changeimg('BeautifulDaughter_76.549.svg',this);">
+                                       <img src="./assets/Images/happybirthday2.png" class="Same third_img" alt=""
+                                       onclick="changeimg('Happy-Birthday-95.991-mm-1.svg',this);">
+                                       <img src="./assets/Images/happybirthday3.png" class="Same fourth_img" alt=""
+                                       onclick="changeimg('Wishing-you-a-happy-birthday-OL-93.465-mm-02.svg',this);">
+                                   </div>
+                               </div>
+                       </div>
+                   </div>
+                   <div class="col-md-6 Display">
+                       <div class="Display_Data stick_mini stick">
+                              <div id="featured_img stick_part">
+                                  <img id="img" src="./assets/Images/PugFamily-size-84.86-03.svg" class="ico-image" style="display: inline-block;">
+                                  <div class="Image_Wrapper">
+                                      <div id="mobile-text-box-wrapper">
+                                       <textarea id="mobile-text-box" class="Text_1" onkeyup="demo1()" maxlength="10"></textarea>
+                                       
+                                       <textarea id="mobile-text-box" class="Text_2" onkeyup="demo1()" maxlength="10"></textarea>
+                                       
+                                       <textarea id="mobile-text-box" class="Text_3" onkeyup="demo1()" maxlength="10"></textarea>
+                                       
+                                       <textarea id="mobile-text-box" class="Text_4" onkeyup="demo1()" maxlength="10"></textarea>
+                                       
+                                       <textarea id="mobile-text-box" class="Text_5" onkeyup="demo1()" maxlength="10"></textarea>
+                                       
+                                       <textarea id="mobile-text-box" class="Text_6" onkeyup="demo1()" maxlength="10"></textarea>
+                                      
+<!--
+                                           <div id='demoDiv1' class=''>
+	
+                                                <div id='demodiv-1' class='resizable'>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+-->
+                        
+                                <div class="tooltip-instructions tooltip_display">
+                                    <p>Click on the text to edit with your name & message.</p>
+                                </div>
+                              </div>
+
+                              </div>
+                         </div>      
+                              
+<!--
+                        <div class="stick_mini stick">
+                          <div class="stick_part"><a class="group1 icons" href="./assets/Images/PugFamily-size-84.86-03.svg"><img src="./assets/Images/PugFamily-size-84.86-03.svg" class="ico-image" style="display: inline-block;"></a></div>
+                        <div class="stick_text">
+              <div class="text_container" id="text_container_1">
+                <div class="textBox" style="font-size: 56px;">Line 1</div>
+              </div>
+                              <div class="text_container" id="text_container_2">
+                  <div class="textBox" style="font-size: 56px;">Line 2</div>
+                </div>
+                    </div>
+
+                  </div>      
+-->
+                      
+                   </div>
+                   
+                   
+                   <div class="submit_block">
+                        <input type="submit" class="submit_btn" value="Submit">  
+                   </div>
+               </div>
+           </div>
+           
+       </div>
+   </div> 
+   
+   
+
+   
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+     <script>
+        $(document).ready(function(){
+		$(".design_02 .Name").click(function(){
+	             $(".Flavour_Inset").addClass("active");
+            $("#Design").addClass("active");
+       		        });
+		});
+         
+        $(document).ready(function(){
+		$(".design_01 .Name").click(function(){
+	             $(".Flavour_Inset").removeClass("active");
+            $("#Design").removeClass("active");
+       		        });
+            
+        /*$('.Dark').click(function() {
+            $("#featured_img").addClass("active");
+            $("#featured_img").removeClass("active-2");
+        });
+            
+        $('.White').click(function() {
+            $("#featured_img").addClass("active-2");
+            $("#featured_img").removeClass("active");
+        });*/
+            
+        $('.Dark').click(function() {
+            $(".stick_mini").css("background-color","#422c25");
+            $(".Text_1").css("background-color","#422c25");
+            $(".Text_2").css("background-color","#422c25");
+            $(".Text_3").css("background-color","#422c25");
+            $(".Text_4").css("background-color","#422c25");
+            $(".Text_5").css("background-color","#422c25");
+            $(".Text_6").css("background-color","#422c25");
+        });
+            
+        $('.White').click(function() {
+            $(".stick_mini").css("background-color","#f0e0a2");
+            $(".Text_1").css("background-color","#f0e0a2");
+            $(".Text_2").css("background-color","#f0e0a2");
+            $(".Text_3").css("background-color","#f0e0a2");
+            $(".Text_4").css("background-color","#f0e0a2");
+            $(".Text_5").css("background-color","#f0e0a2");
+            $(".Text_6").css("background-color","#f0e0a2");
+        });
+            
+        $('.first_img').click(function() {
+            $(".Text_1").css("display","block");
+            $(".Text_2").css("display","block");
+            $(".Text_3").css("display","none");
+            $(".Text_4").css("display","none");
+            $(".Text_5").css("display","none");
+            $(".Text_6").css("display","none");
+        });
+        $('.second_img').click(function() {
+            $(".Text_1").css("display","none");
+            $(".Text_2").css("display","none");
+            $(".Text_3").css("display","block");
+            $(".Text_4").css("display","block");
+            $(".Text_5").css("display","none");
+            $(".Text_6").css("display","none");
+        });  
+        $('.third_img').click(function() {
+            $(".Text_1").css("display","none");
+            $(".Text_2").css("display","none");
+            $(".Text_3").css("display","none");
+            $(".Text_4").css("display","none");
+            $(".Text_5").css("display","block");
+            $(".Text_6").css("display","none");
+        }); 
+        $('.fourth_img').click(function() {
+            $(".Text_1").css("display","none");
+            $(".Text_2").css("display","none");
+            $(".Text_3").css("display","none");
+            $(".Text_4").css("display","none");
+            $(".Text_5").css("display","none");
+            $(".Text_6").css("display","block");
+        });  
+        $('.Text_1').click(function() {
+            $(".tooltip_display").css("display","none");
+        });      
+            $('.Text_2').click(function() {
+            $(".tooltip_display").css("display","none");
+        }); 
+            $('.Text_3').click(function() {
+            $(".tooltip_display").css("display","none");
+        }); 
+            $('.Text_4').click(function() {
+            $(".tooltip_display").css("display","none");
+        }); 
+            $('.Text_5').click(function() {
+            $(".tooltip_display").css("display","none");
+        }); 
+            $('.Text_6').click(function() {
+            $(".tooltip_display").css("display","none");
+        }); 
+        $('.first_img').click(function() {
+            $(".tooltip_display").css("display","block");
+        }); 
+        
+        $('.second_img').click(function() {
+            $(".tooltip_display").css("display","block");
+        }); 
+            
+        $('.third_img').click(function() {
+            $(".tooltip_display").css("display","block");
+        }); 
+            
+        $('.fourth_img').click(function() {
+            $(".tooltip_display").css("display","block");
+        }); 
+            
+            
+            
+		});
+</script>  
+
+  <script type="text/javascript">
+	function changeimg(url,e) {
+  document.getElementById("img").src = url;
+  let nodes = document.getElementById("thumb_img");
+  let img_child = nodes.children;
+  for (i = 0; i < img_child.length; i++) {
+    img_child[i].classList.remove('active')
+  }
+  e.classList.add('active');
+
+}
+
+</script>  
+
+
+<script>
+
+
+    function demo1() {
+
+        var div = document.getElementById('demodiv-1');
+        var input = document.getElementById('mobile-text-box');
+
+        div.innerText = input.value;
+
+        resizeContents();
+    }
+    
+    function resizeContents() {
+	
+    var resizableDivs = document.getElementsByClassName('resizable');
+	
+    for (index = 0; index < resizableDivs.length; ++index) {
+        var div = resizableDivs[index];
+        if (div.innerText != '') {
+            var divWidth = div.clientWidth;
+            var divHeight = div.clientHeight;
+
+            var contentWidth = div.scrollWidth;
+            var contentHeight = div.scrollHeight;
+
+            var fontSize = div.style.fontSize;
+            fontSize = Number(fontSize.substring(0, fontSize.length - 2));
+
+            while (contentWidth <= divWidth && contentHeight <= divHeight) {
+                fontSize += 1;
+                div.style.fontSize = fontSize + 'px';
+                contentWidth = div.scrollWidth;
+                contentHeight = div.scrollHeight;
+				
+            }
+
+             while (contentWidth > divWidth || contentHeight > divHeight) {
+                 fontSize -= 1;
+                 div.style.fontSize = fontSize + 'px';
+
+                 contentWidth = div.scrollWidth;
+                 contentHeight = div.scrollHeight;
+             }
+        }
+    }
+	
+    }
+
+</script>    
+
+</body>
+</html>

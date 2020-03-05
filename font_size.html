@@ -1,0 +1,441 @@
+
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body {
+	padding: 0;
+	margin: 0;	
+}
+.box {
+	
+	height: 150px;
+	width: 150px;	
+	border: 1px solid #000;
+	margin: 20px auto;
+	display: inline-block;
+}
+input {
+	margin: auto;	
+	
+}
+#demoDiv1 {
+	height: 100px !important;
+	width: 100px;
+	border: 1px solid #000;	
+}
+#demodiv-1 {
+	height: 50px;	
+}
+#demodiv-2 {
+	height: 50px;		
+}
+.to-do {
+	text-align: center;
+	margin: 20px;
+}
+.to-do input {
+	width: 40%;		
+}
+#dynamic-list li {
+	
+	margin: 20px auto;
+	border: 1px solid;
+    width: 30%;
+    list-style-type: none;	
+	position: relative;
+	padding: 10px 0px;
+	min-height: 20px;
+	overflow-wrap: break-word;
+}
+#dynamic-list li button {
+	
+	position: absolute;
+    right: 0;
+    background: transparent;
+	    border: 0;
+		
+}
+#dynamic-list li button:after {
+	
+	content: '\f00d';
+	
+	font-family: FontAwesome;
+	font-size: 25px;	
+	    right: 5px;
+}
+.drag-left ul li {
+	list-style-type: none;
+	margin: 20px 0px;	
+}
+.drag-left {
+	border-right: 1px solid #000;
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	height: 100vh;
+}
+.drag-right {
+	width: 74%;	
+	display: inline-block;
+	vertical-align: top;
+}
+.drag-right-1 {
+	width: 80%;
+	margin: auto;
+	border:1px solid #000;
+	margin-top: 50px;
+	min-height: 500px;
+    padding: 20px;
+}
+.drag-right-1 li {
+	
+	list-style-type: none;
+
+}
+#basicTable td {
+	border: 1px solid red;	
+	height: 100px;
+}
+#basicTable {
+	width: 100%;	
+}
+#basicTable tr {
+	min-height: 50px;	
+	
+}
+#my-table {
+	width: 100%;	
+}
+#my-table td {
+	border: 1px solid red;
+	height: 100px;	
+}
+#drag-right-1 .myid1 {
+	display: block;
+	width: 100%;
+	vertical-align: top;
+    margin-top: 30px;	
+	min-height: 70px;
+	border: 1px solid #000;	
+	float: left;
+}
+#drag-right-1 .myid2 {
+	display: inline-block;
+	width: calc(50% - 2px);
+	vertical-align: top;
+    margin-top: 30px;	
+	min-height: 70px;
+	border: 1px solid #000;	
+}
+#drag-right-1 .myid3 {
+	display: inline-block;
+	width: calc(33.3% - 2px);
+	vertical-align: top;
+    margin-top: 30px;	
+	min-height: 70px;
+	border: 1px solid #000;	
+}
+#drag-right-1 .myid4 {
+	display: inline-block;
+	width: calc(25% - 2px);
+	vertical-align: top;
+    margin-top: 30px;	
+	min-height: 70px;
+	border: 1px solid #000;	
+}
+#drag-right-1 .myid5 {
+	display: inline-block;
+	width: calc(20% - 2px);
+	vertical-align: top;
+    margin-top: 30px;	
+	min-height: 70px;
+	border: 1px solid #000;	
+}
+
+.add {
+	display: block;
+	
+}
+.btn-block {
+	display:  block;	
+}
+div#drag-right-1:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+ 
+		
+
+.drag-two {
+	border: 1px solid red;
+	height: 50px;	
+}
+.drag-form-2 {
+	display: inline-block;
+	width: 49.6%;
+	margin: 20px 0px;
+	border: 1px solid #ddd;
+	min-height: 70px;
+	overflow: hidden;
+	vertical-align: top;
+		
+}
+.drag-form-1 {
+	
+	display: block;
+	width: 100%;	
+	margin: 20px 0px;	
+	border: 1px solid #ddd;
+	min-height: 70px;
+	overflow: hidden;
+}
+.drag-form:after {
+	content: ' ';
+	display: block;
+	clear: both;	
+}
+.drag-form .drag-input.ui-draggable input[type=text], .drag-form textarea{
+	
+	width: 100%;
+	min-height: 30px;
+	
+}
+.drag-form textarea {
+	
+	min-height: 100px;	
+}
+.drag-form .ui-draggable {
+	margin: 20px;	
+	position: relative;
+}
+.drag-form .fa-times-circle {
+	border: 1px solid red;	
+}
+
+
+#Section1 > div {
+    float: left;
+	width: calc(25% - 1px);
+            /*width: 1%;*/
+           border-right: 1px dotted red;
+            text-align: center;
+			height: 100%;
+}
+#Section1 {
+	
+	display: block;	
+}
+.div-2 {
+	height: 100%;
+   width: calc(50% - 2px);
+    float: left;
+    border: 1px solid #000;
+    min-height: 100px;	
+}
+.div-1 {
+	height: 100%;
+   width: calc(100% - 2px);
+    float: left;
+    border: 1px solid #000;
+    min-height: 100px;	
+}
+#myForm .myid2 {
+	
+	width: calc(50% - 12px);
+	margin-right: 10px;	
+}
+.droppedFields input[type=text], .droppedFields textarea {
+	width: 100%;
+    min-height: 30px;	
+}
+.droppedFields .ui-draggable {
+    margin: 20px;
+    position: relative;
+}
+.droppedFields textarea {
+    min-height: 100px;
+}
+.droppedFields select {
+	width: 100%;
+	min-height: 30px;	
+}
+.live {
+	float: right;
+	cursor: pointer;	
+	
+}
+.drag-right-2:after {
+	content: '';
+	display: block;
+	clear: both;	
+}
+.html-content .btn-block {
+	display: none;	
+}
+.save {
+	float: right;	
+}
+.dynamic-content {
+    display:none;
+}
+.slct select .abc:hover{
+    content: attr(title);
+    background: #666 !important;
+	 background-color: #666 !important;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: none;
+}
+.demo-7 .sidebar {
+	float: left; 	
+	border: 1px solid;
+}
+.demo-7 .content {
+	float: left; 	
+	border: 1px solid;
+}
+.content-part {
+	width: 200px;
+	height: 300px;
+	border: 5px solid #000;	
+	float: left;
+	margin: 30px;
+}
+.demo-7:after {
+	content: '';
+	display: block;
+	clear: both;	
+}
+.demo-7 .sidebar li {
+	list-style-type: none;
+	border: 1px solid #000;
+	margin: 20px;
+	height:100px;
+	width: 100px;
+		
+}
+.subcat_active{
+    background-color:yellow;
+}
+
+</style>
+<title></title>
+
+
+<link rel="stylesheet" href="demo.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+<input id='demoInput1' onkeyup="demo1()" maxlength="10"/>
+
+<input id='demoInput2' onkeyup="demo2()" maxlength="10"/>
+
+<div id='demoDiv1' class=''>
+	
+    <div id='demodiv-1' class='resizable'>
+    
+    </div>
+    
+     <div id='demodiv-2' class='resizable'>
+    
+     </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function demo1() {
+	
+    var div = document.getElementById('demodiv-1');
+    var input = document.getElementById('demoInput1');
+	
+ 	div.innerText = input.value;
+	
+    resizeContents();
+	
+	
+	
+
+}
+
+function demo2() {
+	
+    var div = document.getElementById('demodiv-2');
+    var input = document.getElementById('demoInput2');
+	
+ 	div.innerText = input.value;
+	
+    resizeContents();
+	
+	
+
+}
+
+function resizeContents() {
+	
+    var resizableDivs = document.getElementsByClassName('resizable');
+	
+    for (index = 0; index < resizableDivs.length; ++index) {
+        var div = resizableDivs[index];
+        if (div.innerText != '') {
+            var divWidth = div.clientWidth;
+            var divHeight = div.clientHeight;
+
+            var contentWidth = div.scrollWidth;
+            var contentHeight = div.scrollHeight;
+
+            var fontSize = div.style.fontSize;
+            fontSize = Number(fontSize.substring(0, fontSize.length - 2));
+
+            while (contentWidth <= divWidth && contentHeight <= divHeight) {
+                fontSize += 1;
+                div.style.fontSize = fontSize + 'px';
+                contentWidth = div.scrollWidth;
+                contentHeight = div.scrollHeight;
+				
+            }
+
+             while (contentWidth > divWidth || contentHeight > divHeight) {
+                 fontSize -= 1;
+                 div.style.fontSize = fontSize + 'px';
+
+                 contentWidth = div.scrollWidth;
+                 contentHeight = div.scrollHeight;
+             }
+        }
+    }
+	
+}
+
+</script>
+
+
+</body>
+
+</html>
